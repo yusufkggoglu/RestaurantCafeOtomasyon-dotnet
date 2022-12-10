@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using FormTasarım;
+using FormDesign;
 
-namespace FormTasarim
+namespace FormDesign
 {
     static class Program
     {
@@ -17,7 +17,7 @@ namespace FormTasarim
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ProductForm());
+            Application.Run(new FormCategory());
         }
     }
 }

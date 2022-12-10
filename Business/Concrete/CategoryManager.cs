@@ -26,7 +26,17 @@ namespace Business.Concrete
 
         public void Add(Category category)
         {
-            //_categoryDal.Add(category);
+            _categoryDal.Add(category);
+        }
+
+        public void Update(Category category)
+        {
+            _categoryDal.Update(category);
+        }
+
+        public void Delete(Category category)
+        {
+            _categoryDal.Delete(category);
         }
     }
 }

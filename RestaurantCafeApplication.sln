@@ -9,7 +9,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Business", "Business\Busine
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{3F85D740-67F5-4825-8466-B0963A2F2BFE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormTasarım", "FormTasarım\FormTasarım.csproj", "{02BCB84C-5200-4D88-A2B3-65935EFEAF3C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FormDesign", "FormTasarım\FormDesign.csproj", "{02BCB84C-5200-4D88-A2B3-65935EFEAF3C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

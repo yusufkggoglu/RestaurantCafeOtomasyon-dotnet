@@ -12,7 +12,7 @@ using Business.Concrete;
 using DataAccess.Concrete.EntityFramework;
 using Entities;
 
-namespace FormTasarım
+namespace FormDesign
 {
     public partial class ProductForm : Form
     {
@@ -89,6 +89,13 @@ namespace FormTasarım
             });
             LoadProducts();
             MessageBox.Show("Ürün Silindi!");
+        }
+
+        private void btnOpenFormCategory_Click(object sender, EventArgs e)
+        {
+            FormCategory frm = new FormCategory();
+            frm.Show();
+            this.Hide();
         }
     }
 }
