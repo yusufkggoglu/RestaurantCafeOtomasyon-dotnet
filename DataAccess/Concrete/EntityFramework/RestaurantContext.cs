@@ -6,6 +6,7 @@ using System.Security.AccessControl;
 using System.Text;
 using System.Threading.Tasks;
 using Entities;
+using Entities.Concrete;
 
 namespace DataAccess.Concrete.EntityFramework
 {
@@ -13,6 +14,8 @@ namespace DataAccess.Concrete.EntityFramework
     {
         public DbSet<Product> Products { get; set; }
         public DbSet<Category> Categories { get; set; }
-
+        public DbSet<Table> Tables { get; set; }
+        public DbSet<Order> Orders { get; set; }
+        public DbSet<Payment> Payments { get; set; }
     }
 }

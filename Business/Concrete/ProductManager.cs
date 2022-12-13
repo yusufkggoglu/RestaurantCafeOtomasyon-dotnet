@@ -42,5 +42,10 @@ namespace Business.Concrete
         {
             _productDal.Delete(product);
         }
+
+        public Product Get(int id)
+        {
+            return _productDal.Get(p=>p.ProductID.Equals(id));
+        }
     }
 }
