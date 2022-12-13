@@ -12,6 +12,8 @@ using Business.Concrete;
 using DataAccess.Concrete.EntityFramework;
 using Entities;
 using FormDesign;
+using FormProduct;
+using FormTasarım;
 
 namespace FormDesign
 {
@@ -60,8 +62,13 @@ namespace FormDesign
         {
             tbxCategoryNameUpdate.Text = dqwCategory.CurrentRow.Cells[1].Value.ToString();
         }
-
-        private void btnDelete_Click(object sender, EventArgs e)
+        private void btnOpenProductForm_Click(object sender, EventArgs e)
+        {
+            ProductForm frm = new ProductForm();
+            frm.Show();
+            this.Hide();
+        }
+        private void btnDelete_Click_1(object sender, EventArgs e)
         {
             _categoryService.Delete(new Category
             {
@@ -69,13 +76,6 @@ namespace FormDesign
             });
             LoadCategories();
             MessageBox.Show("Kategori Silindi!");
-        }
-
-        private void btnOpenProductForm_Click(object sender, EventArgs e)
-        {
-            ProductForm frm = new ProductForm();
-            frm.Show();
-            this.Hide();
         }
     }
 }

@@ -11,8 +11,10 @@ using Business.Abstract;
 using Business.Concrete;
 using DataAccess.Concrete.EntityFramework;
 using Entities;
+using FormDesign;
+using FormTasarım;
 
-namespace FormDesign
+namespace FormProduct
 {
     public partial class ProductForm : Form
     {
@@ -24,13 +26,11 @@ namespace FormDesign
         }
         IProductService _productService;
         ICategoryService _categoryService;
-
         private void Form1_Load(object sender, EventArgs e)
         {
             LoadProducts();
             LoadCategories();
         }
-
         private void LoadCategories()
         {
             cbxCategory.DataSource = _categoryService.GetAll();
@@ -41,14 +41,11 @@ namespace FormDesign
             cbxCategoryUpdate.DisplayMember = "CategoryName";
             cbxCategoryUpdate.ValueMember = "CategoryID";
 
-
         }
-
         private void LoadProducts()
         {
             dqwProduct.DataSource = _productService.GetAll();
         }
-
         private void btnAddProduct_Click(object sender, EventArgs e)
         {
             _productService.Add(new Product
@@ -60,7 +57,6 @@ namespace FormDesign
             LoadProducts();
             MessageBox.Show("Ürün Eklendi!");
         }
-
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             _productService.Update(new Product
@@ -73,14 +69,12 @@ namespace FormDesign
             LoadProducts();
             MessageBox.Show("Ürün Güncellendi!");
         }
-
         private void dqwProduct_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             cbxCategoryUpdate.SelectedValue = dqwProduct.CurrentRow.Cells[1].Value;
             tbxProductNameUpdate.Text = dqwProduct.CurrentRow.Cells[2].Value.ToString();
             tbxPriceUpdate.Text = dqwProduct.CurrentRow.Cells[3].Value.ToString();
         }
-
         private void btnDelete_Click(object sender, EventArgs e)
         {
             _productService.Delete(new Product
@@ -90,10 +84,15 @@ namespace FormDesign
             LoadProducts();
             MessageBox.Show("Ürün Silindi!");
         }
-
         private void btnOpenFormCategory_Click(object sender, EventArgs e)
         {
             FormCategory frm = new FormCategory();
+            frm.Show();
+            this.Hide();
+        }
+        private void OpenHomeForm_Click(object sender, EventArgs e)
+        {
+            HomeForm frm = new HomeForm();
             frm.Show();
             this.Hide();
         }

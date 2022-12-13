@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using FormDesign;
+using FormTasarım;
 
 namespace FormDesign
 {
@@ -17,7 +18,7 @@ namespace FormDesign
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormCategory());
+            Application.Run(new HomeForm());
         }
     }
 }

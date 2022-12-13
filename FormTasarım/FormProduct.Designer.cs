@@ -1,5 +1,5 @@
 ﻿
-namespace FormDesign
+namespace FormProduct
 {
     partial class ProductForm
     {
@@ -42,6 +42,7 @@ namespace FormDesign
             this.btnAddProduct = new Bunifu.Framework.UI.BunifuFlatButton();
             this.dqwProduct = new Bunifu.Framework.UI.BunifuCustomDataGrid();
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
+            this.OpenHomeForm = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnOpenFormCategory = new Bunifu.Framework.UI.BunifuFlatButton();
             this.btnDelete = new Bunifu.Framework.UI.BunifuFlatButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
@@ -52,7 +53,6 @@ namespace FormDesign
             this.lblCategory2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.lblPrice2 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.btnUpdate = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dqwProduct)).BeginInit();
             this.bunifuCards1.SuspendLayout();
@@ -70,7 +70,7 @@ namespace FormDesign
             this.groupBox1.Controls.Add(this.lblProductPrice);
             this.groupBox1.Controls.Add(this.btnAddProduct);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox1.Location = new System.Drawing.Point(23, 322);
+            this.groupBox1.Location = new System.Drawing.Point(23, 358);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -212,14 +212,14 @@ namespace FormDesign
             this.dqwProduct.EnableHeadersVisualStyles = false;
             this.dqwProduct.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.dqwProduct.HeaderForeColor = System.Drawing.Color.White;
-            this.dqwProduct.Location = new System.Drawing.Point(23, 23);
+            this.dqwProduct.Location = new System.Drawing.Point(12, 81);
             this.dqwProduct.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dqwProduct.Name = "dqwProduct";
             this.dqwProduct.ReadOnly = true;
             this.dqwProduct.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dqwProduct.RowHeadersWidth = 51;
             this.dqwProduct.RowTemplate.Height = 24;
-            this.dqwProduct.Size = new System.Drawing.Size(932, 263);
+            this.dqwProduct.Size = new System.Drawing.Size(1036, 263);
             this.dqwProduct.TabIndex = 13;
             this.dqwProduct.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dqwProduct_CellClick);
             // 
@@ -229,6 +229,7 @@ namespace FormDesign
             this.bunifuCards1.BorderRadius = 5;
             this.bunifuCards1.BottomSahddow = true;
             this.bunifuCards1.color = System.Drawing.Color.DarkGreen;
+            this.bunifuCards1.Controls.Add(this.OpenHomeForm);
             this.bunifuCards1.Controls.Add(this.btnOpenFormCategory);
             this.bunifuCards1.Controls.Add(this.btnDelete);
             this.bunifuCards1.Controls.Add(this.groupBox2);
@@ -241,8 +242,47 @@ namespace FormDesign
             this.bunifuCards1.Name = "bunifuCards1";
             this.bunifuCards1.RightSahddow = true;
             this.bunifuCards1.ShadowDepth = 20;
-            this.bunifuCards1.Size = new System.Drawing.Size(1200, 681);
+            this.bunifuCards1.Size = new System.Drawing.Size(1304, 712);
             this.bunifuCards1.TabIndex = 1;
+            // 
+            // OpenHomeForm
+            // 
+            this.OpenHomeForm.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.OpenHomeForm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.OpenHomeForm.BackColor = System.Drawing.Color.Blue;
+            this.OpenHomeForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.OpenHomeForm.BorderRadius = 0;
+            this.OpenHomeForm.ButtonText = "Geri";
+            this.OpenHomeForm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.OpenHomeForm.DisabledColor = System.Drawing.Color.Gray;
+            this.OpenHomeForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.OpenHomeForm.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.OpenHomeForm.Iconcolor = System.Drawing.Color.Transparent;
+            this.OpenHomeForm.Iconimage = ((System.Drawing.Image)(resources.GetObject("OpenHomeForm.Iconimage")));
+            this.OpenHomeForm.Iconimage_right = null;
+            this.OpenHomeForm.Iconimage_right_Selected = null;
+            this.OpenHomeForm.Iconimage_Selected = null;
+            this.OpenHomeForm.IconMarginLeft = 0;
+            this.OpenHomeForm.IconMarginRight = 0;
+            this.OpenHomeForm.IconRightVisible = true;
+            this.OpenHomeForm.IconRightZoom = 0D;
+            this.OpenHomeForm.IconVisible = true;
+            this.OpenHomeForm.IconZoom = 90D;
+            this.OpenHomeForm.IsTab = false;
+            this.OpenHomeForm.Location = new System.Drawing.Point(14, 9);
+            this.OpenHomeForm.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
+            this.OpenHomeForm.Name = "OpenHomeForm";
+            this.OpenHomeForm.Normalcolor = System.Drawing.Color.Blue;
+            this.OpenHomeForm.OnHovercolor = System.Drawing.Color.Blue;
+            this.OpenHomeForm.OnHoverTextColor = System.Drawing.Color.White;
+            this.OpenHomeForm.selected = false;
+            this.OpenHomeForm.Size = new System.Drawing.Size(218, 66);
+            this.OpenHomeForm.TabIndex = 19;
+            this.OpenHomeForm.Text = "Geri";
+            this.OpenHomeForm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.OpenHomeForm.Textcolor = System.Drawing.Color.White;
+            this.OpenHomeForm.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.OpenHomeForm.Click += new System.EventHandler(this.OpenHomeForm_Click);
             // 
             // btnOpenFormCategory
             // 
@@ -254,7 +294,7 @@ namespace FormDesign
             this.btnOpenFormCategory.ButtonText = "Kategorileri Düzenle";
             this.btnOpenFormCategory.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnOpenFormCategory.DisabledColor = System.Drawing.Color.Gray;
-            this.btnOpenFormCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnOpenFormCategory.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnOpenFormCategory.Iconcolor = System.Drawing.Color.Transparent;
             this.btnOpenFormCategory.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnOpenFormCategory.Iconimage")));
             this.btnOpenFormCategory.Iconimage_right = null;
@@ -267,14 +307,14 @@ namespace FormDesign
             this.btnOpenFormCategory.IconVisible = true;
             this.btnOpenFormCategory.IconZoom = 90D;
             this.btnOpenFormCategory.IsTab = false;
-            this.btnOpenFormCategory.Location = new System.Drawing.Point(966, 86);
+            this.btnOpenFormCategory.Location = new System.Drawing.Point(1059, 177);
             this.btnOpenFormCategory.Margin = new System.Windows.Forms.Padding(8);
             this.btnOpenFormCategory.Name = "btnOpenFormCategory";
             this.btnOpenFormCategory.Normalcolor = System.Drawing.Color.Blue;
             this.btnOpenFormCategory.OnHovercolor = System.Drawing.Color.Blue;
             this.btnOpenFormCategory.OnHoverTextColor = System.Drawing.Color.White;
             this.btnOpenFormCategory.selected = false;
-            this.btnOpenFormCategory.Size = new System.Drawing.Size(226, 77);
+            this.btnOpenFormCategory.Size = new System.Drawing.Size(218, 66);
             this.btnOpenFormCategory.TabIndex = 18;
             this.btnOpenFormCategory.Text = "Kategorileri Düzenle";
             this.btnOpenFormCategory.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -292,7 +332,7 @@ namespace FormDesign
             this.btnDelete.ButtonText = "Sil";
             this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnDelete.DisabledColor = System.Drawing.Color.Gray;
-            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.btnDelete.Iconcolor = System.Drawing.Color.Transparent;
             this.btnDelete.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnDelete.Iconimage")));
             this.btnDelete.Iconimage_right = null;
@@ -305,14 +345,14 @@ namespace FormDesign
             this.btnDelete.IconVisible = true;
             this.btnDelete.IconZoom = 90D;
             this.btnDelete.IsTab = false;
-            this.btnDelete.Location = new System.Drawing.Point(966, 23);
+            this.btnDelete.Location = new System.Drawing.Point(1059, 81);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(8);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Normalcolor = System.Drawing.Color.Red;
             this.btnDelete.OnHovercolor = System.Drawing.Color.Red;
             this.btnDelete.OnHoverTextColor = System.Drawing.Color.White;
             this.btnDelete.selected = false;
-            this.btnDelete.Size = new System.Drawing.Size(226, 47);
+            this.btnDelete.Size = new System.Drawing.Size(218, 66);
             this.btnDelete.TabIndex = 17;
             this.btnDelete.Text = "Sil";
             this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -331,7 +371,7 @@ namespace FormDesign
             this.groupBox2.Controls.Add(this.lblPrice2);
             this.groupBox2.Controls.Add(this.btnUpdate);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.groupBox2.Location = new System.Drawing.Point(505, 322);
+            this.groupBox2.Location = new System.Drawing.Point(588, 358);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -455,10 +495,11 @@ namespace FormDesign
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1200, 681);
+            this.ClientSize = new System.Drawing.Size(1304, 712);
             this.Controls.Add(this.bunifuCards1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5, 6, 5, 6);
             this.Name = "ProductForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -486,7 +527,6 @@ namespace FormDesign
         private Bunifu.Framework.UI.BunifuFlatButton btnAddProduct;
         private Bunifu.Framework.UI.BunifuCustomDataGrid dqwProduct;
         private Bunifu.Framework.UI.BunifuCards bunifuCards1;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.ComboBox cbxCategoryUpdate;
         private Bunifu.Framework.UI.BunifuMetroTextbox tbxPriceUpdate;
@@ -497,6 +537,7 @@ namespace FormDesign
         private Bunifu.Framework.UI.BunifuFlatButton btnUpdate;
         private Bunifu.Framework.UI.BunifuFlatButton btnDelete;
         private Bunifu.Framework.UI.BunifuFlatButton btnOpenFormCategory;
+        private Bunifu.Framework.UI.BunifuFlatButton OpenHomeForm;
     }
 }
 

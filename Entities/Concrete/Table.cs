@@ -10,7 +10,7 @@ namespace Entities
    public class Table:IEntity
     {
         public int  TableID { get; set; }
-        public bool Status { get; set; }
+        public int Status { get; set; }
 
     }
 }

@@ -29,10 +29,12 @@ namespace FormDesign
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCategory));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCategory));
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
+            this.btnDelete = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnOpenProductForm = new Bunifu.Framework.UI.BunifuFlatButton();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tbxCategoryNameUpdate = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.btnUpdateCategory = new Bunifu.Framework.UI.BunifuFlatButton();
@@ -42,8 +44,6 @@ namespace FormDesign
             this.btnAddCategory = new Bunifu.Framework.UI.BunifuFlatButton();
             this.lblCategory = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.dqwCategory = new Bunifu.Framework.UI.BunifuCustomDataGrid();
-            this.btnDelete = new Bunifu.Framework.UI.BunifuFlatButton();
-            this.btnOpenProductForm = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuCards1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -56,8 +56,8 @@ namespace FormDesign
             this.bunifuCards1.BorderRadius = 5;
             this.bunifuCards1.BottomSahddow = true;
             this.bunifuCards1.color = System.Drawing.Color.DarkRed;
-            this.bunifuCards1.Controls.Add(this.btnOpenProductForm);
             this.bunifuCards1.Controls.Add(this.btnDelete);
+            this.bunifuCards1.Controls.Add(this.btnOpenProductForm);
             this.bunifuCards1.Controls.Add(this.groupBox2);
             this.bunifuCards1.Controls.Add(this.groupBox1);
             this.bunifuCards1.Controls.Add(this.dqwCategory);
@@ -68,8 +68,86 @@ namespace FormDesign
             this.bunifuCards1.Name = "bunifuCards1";
             this.bunifuCards1.RightSahddow = true;
             this.bunifuCards1.ShadowDepth = 20;
-            this.bunifuCards1.Size = new System.Drawing.Size(1200, 681);
+            this.bunifuCards1.Size = new System.Drawing.Size(1302, 749);
             this.bunifuCards1.TabIndex = 0;
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDelete.BackColor = System.Drawing.Color.Red;
+            this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnDelete.BorderRadius = 0;
+            this.btnDelete.ButtonText = "Sil";
+            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDelete.DisabledColor = System.Drawing.Color.Gray;
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnDelete.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnDelete.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnDelete.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnDelete.Iconimage")));
+            this.btnDelete.Iconimage_right = null;
+            this.btnDelete.Iconimage_right_Selected = null;
+            this.btnDelete.Iconimage_Selected = null;
+            this.btnDelete.IconMarginLeft = 0;
+            this.btnDelete.IconMarginRight = 0;
+            this.btnDelete.IconRightVisible = true;
+            this.btnDelete.IconRightZoom = 0D;
+            this.btnDelete.IconVisible = true;
+            this.btnDelete.IconZoom = 90D;
+            this.btnDelete.IsTab = false;
+            this.btnDelete.Location = new System.Drawing.Point(1074, 109);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Normalcolor = System.Drawing.Color.Red;
+            this.btnDelete.OnHovercolor = System.Drawing.Color.Red;
+            this.btnDelete.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnDelete.selected = false;
+            this.btnDelete.Size = new System.Drawing.Size(218, 66);
+            this.btnDelete.TabIndex = 17;
+            this.btnDelete.Text = "Sil";
+            this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnDelete.Textcolor = System.Drawing.Color.White;
+            this.btnDelete.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click_1);
+            // 
+            // btnOpenProductForm
+            // 
+            this.btnOpenProductForm.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnOpenProductForm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnOpenProductForm.BackColor = System.Drawing.Color.Blue;
+            this.btnOpenProductForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnOpenProductForm.BorderRadius = 0;
+            this.btnOpenProductForm.ButtonText = "Geri";
+            this.btnOpenProductForm.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOpenProductForm.DisabledColor = System.Drawing.Color.Gray;
+            this.btnOpenProductForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnOpenProductForm.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnOpenProductForm.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnOpenProductForm.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnOpenProductForm.Iconimage")));
+            this.btnOpenProductForm.Iconimage_right = null;
+            this.btnOpenProductForm.Iconimage_right_Selected = null;
+            this.btnOpenProductForm.Iconimage_Selected = null;
+            this.btnOpenProductForm.IconMarginLeft = 0;
+            this.btnOpenProductForm.IconMarginRight = 0;
+            this.btnOpenProductForm.IconRightVisible = true;
+            this.btnOpenProductForm.IconRightZoom = 0D;
+            this.btnOpenProductForm.IconVisible = true;
+            this.btnOpenProductForm.IconZoom = 90D;
+            this.btnOpenProductForm.IsTab = false;
+            this.btnOpenProductForm.Location = new System.Drawing.Point(28, 24);
+            this.btnOpenProductForm.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.btnOpenProductForm.Name = "btnOpenProductForm";
+            this.btnOpenProductForm.Normalcolor = System.Drawing.Color.Blue;
+            this.btnOpenProductForm.OnHovercolor = System.Drawing.Color.Blue;
+            this.btnOpenProductForm.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnOpenProductForm.selected = false;
+            this.btnOpenProductForm.Size = new System.Drawing.Size(218, 66);
+            this.btnOpenProductForm.TabIndex = 14;
+            this.btnOpenProductForm.Text = "Geri";
+            this.btnOpenProductForm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnOpenProductForm.Textcolor = System.Drawing.Color.White;
+            this.btnOpenProductForm.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnOpenProductForm.Click += new System.EventHandler(this.btnOpenProductForm_Click);
             // 
             // groupBox2
             // 
@@ -78,7 +156,7 @@ namespace FormDesign
             this.groupBox2.Controls.Add(this.btnUpdateCategory);
             this.groupBox2.Controls.Add(this.bunifuCustomLabel1);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
-            this.groupBox2.Location = new System.Drawing.Point(493, 335);
+            this.groupBox2.Location = new System.Drawing.Point(595, 420);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(6, 5, 6, 5);
@@ -158,7 +236,7 @@ namespace FormDesign
             this.groupBox1.Controls.Add(this.btnAddCategory);
             this.groupBox1.Controls.Add(this.lblCategory);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
-            this.groupBox1.Location = new System.Drawing.Point(15, 335);
+            this.groupBox1.Location = new System.Drawing.Point(28, 420);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Padding = new System.Windows.Forms.Padding(6, 5, 6, 5);
@@ -254,101 +332,26 @@ namespace FormDesign
             this.dqwCategory.EnableHeadersVisualStyles = false;
             this.dqwCategory.HeaderBgColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(64)))), ((int)(((byte)(0)))));
             this.dqwCategory.HeaderForeColor = System.Drawing.Color.White;
-            this.dqwCategory.Location = new System.Drawing.Point(15, 24);
+            this.dqwCategory.Location = new System.Drawing.Point(28, 109);
             this.dqwCategory.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.dqwCategory.Name = "dqwCategory";
             this.dqwCategory.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.dqwCategory.RowHeadersWidth = 51;
             this.dqwCategory.RowTemplate.Height = 24;
-            this.dqwCategory.Size = new System.Drawing.Size(932, 263);
+            this.dqwCategory.Size = new System.Drawing.Size(1034, 301);
             this.dqwCategory.TabIndex = 1;
             this.dqwCategory.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dqwCategory_CellClick);
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDelete.BackColor = System.Drawing.Color.Red;
-            this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnDelete.BorderRadius = 0;
-            this.btnDelete.ButtonText = "Sil";
-            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDelete.DisabledColor = System.Drawing.Color.Gray;
-            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
-            this.btnDelete.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnDelete.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnDelete.Iconimage")));
-            this.btnDelete.Iconimage_right = null;
-            this.btnDelete.Iconimage_right_Selected = null;
-            this.btnDelete.Iconimage_Selected = null;
-            this.btnDelete.IconMarginLeft = 0;
-            this.btnDelete.IconMarginRight = 0;
-            this.btnDelete.IconRightVisible = true;
-            this.btnDelete.IconRightZoom = 0D;
-            this.btnDelete.IconVisible = true;
-            this.btnDelete.IconZoom = 90D;
-            this.btnDelete.IsTab = false;
-            this.btnDelete.Location = new System.Drawing.Point(961, 24);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(9, 7, 9, 7);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Normalcolor = System.Drawing.Color.Red;
-            this.btnDelete.OnHovercolor = System.Drawing.Color.Red;
-            this.btnDelete.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnDelete.selected = false;
-            this.btnDelete.Size = new System.Drawing.Size(226, 47);
-            this.btnDelete.TabIndex = 5;
-            this.btnDelete.Text = "Sil";
-            this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnDelete.Textcolor = System.Drawing.Color.White;
-            this.btnDelete.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
-            // btnOpenProductForm
-            // 
-            this.btnOpenProductForm.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnOpenProductForm.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnOpenProductForm.BackColor = System.Drawing.Color.Blue;
-            this.btnOpenProductForm.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnOpenProductForm.BorderRadius = 0;
-            this.btnOpenProductForm.ButtonText = "Ürünlere Geri Dön";
-            this.btnOpenProductForm.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnOpenProductForm.DisabledColor = System.Drawing.Color.Gray;
-            this.btnOpenProductForm.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F);
-            this.btnOpenProductForm.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnOpenProductForm.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnOpenProductForm.Iconimage")));
-            this.btnOpenProductForm.Iconimage_right = null;
-            this.btnOpenProductForm.Iconimage_right_Selected = null;
-            this.btnOpenProductForm.Iconimage_Selected = null;
-            this.btnOpenProductForm.IconMarginLeft = 0;
-            this.btnOpenProductForm.IconMarginRight = 0;
-            this.btnOpenProductForm.IconRightVisible = true;
-            this.btnOpenProductForm.IconRightZoom = 0D;
-            this.btnOpenProductForm.IconVisible = true;
-            this.btnOpenProductForm.IconZoom = 90D;
-            this.btnOpenProductForm.IsTab = false;
-            this.btnOpenProductForm.Location = new System.Drawing.Point(961, 85);
-            this.btnOpenProductForm.Margin = new System.Windows.Forms.Padding(9, 7, 9, 7);
-            this.btnOpenProductForm.Name = "btnOpenProductForm";
-            this.btnOpenProductForm.Normalcolor = System.Drawing.Color.Blue;
-            this.btnOpenProductForm.OnHovercolor = System.Drawing.Color.Blue;
-            this.btnOpenProductForm.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnOpenProductForm.selected = false;
-            this.btnOpenProductForm.Size = new System.Drawing.Size(226, 81);
-            this.btnOpenProductForm.TabIndex = 6;
-            this.btnOpenProductForm.Text = "Ürünlere Geri Dön";
-            this.btnOpenProductForm.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnOpenProductForm.Textcolor = System.Drawing.Color.White;
-            this.btnOpenProductForm.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnOpenProductForm.Click += new System.EventHandler(this.btnOpenProductForm_Click);
             // 
             // FormCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.ClientSize = new System.Drawing.Size(1200, 681);
+            this.ClientSize = new System.Drawing.Size(1302, 749);
             this.Controls.Add(this.bunifuCards1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.Name = "FormCategory";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -376,7 +379,7 @@ namespace FormDesign
         private Bunifu.Framework.UI.BunifuFlatButton btnAddCategory;
         private Bunifu.Framework.UI.BunifuMetroTextbox tbxCategoryNameUpdate;
         private Bunifu.Framework.UI.BunifuMetroTextbox tbxCategoryName;
-        private Bunifu.Framework.UI.BunifuFlatButton btnDelete;
         private Bunifu.Framework.UI.BunifuFlatButton btnOpenProductForm;
+        private Bunifu.Framework.UI.BunifuFlatButton btnDelete;
     }
 }
