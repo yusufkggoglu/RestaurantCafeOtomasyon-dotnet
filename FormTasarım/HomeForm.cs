@@ -34,7 +34,16 @@ namespace FormTasarım
 
         private void OpenPayments_Click(object sender, EventArgs e)
         {
+            FormPayment frm = new FormPayment();
+            frm.Show();
+            this.Hide();
+        }
 
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            FormUser frm = new FormUser();
+            frm.Show();
+            this.Hide();
         }
     }
 }

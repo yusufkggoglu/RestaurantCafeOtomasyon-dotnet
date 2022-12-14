@@ -33,6 +33,7 @@ namespace FormTasarım
             this.OpenTables = new Bunifu.Framework.UI.BunifuFlatButton();
             this.OpenProducts = new Bunifu.Framework.UI.BunifuFlatButton();
             this.OpenPayments = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.btnRegister = new Bunifu.Framework.UI.BunifuFlatButton();
             this.SuspendLayout();
             // 
             // OpenTables
@@ -143,16 +144,54 @@ namespace FormTasarım
             this.OpenPayments.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.OpenPayments.Click += new System.EventHandler(this.OpenPayments_Click);
             // 
+            // btnRegister
+            // 
+            this.btnRegister.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnRegister.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnRegister.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnRegister.BorderRadius = 0;
+            this.btnRegister.ButtonText = "Kullanıcı Ekle";
+            this.btnRegister.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnRegister.DisabledColor = System.Drawing.Color.Gray;
+            this.btnRegister.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnRegister.Iconimage = null;
+            this.btnRegister.Iconimage_right = null;
+            this.btnRegister.Iconimage_right_Selected = null;
+            this.btnRegister.Iconimage_Selected = null;
+            this.btnRegister.IconMarginLeft = 0;
+            this.btnRegister.IconMarginRight = 0;
+            this.btnRegister.IconRightVisible = true;
+            this.btnRegister.IconRightZoom = 0D;
+            this.btnRegister.IconVisible = true;
+            this.btnRegister.IconZoom = 90D;
+            this.btnRegister.IsTab = false;
+            this.btnRegister.Location = new System.Drawing.Point(304, 198);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRegister.Name = "btnRegister";
+            this.btnRegister.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnRegister.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(36)))), ((int)(((byte)(129)))), ((int)(((byte)(77)))));
+            this.btnRegister.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnRegister.selected = false;
+            this.btnRegister.Size = new System.Drawing.Size(268, 157);
+            this.btnRegister.TabIndex = 8;
+            this.btnRegister.Text = "Kullanıcı Ekle";
+            this.btnRegister.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnRegister.Textcolor = System.Drawing.Color.White;
+            this.btnRegister.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
+            // 
             // HomeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(595, 388);
+            this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.OpenPayments);
             this.Controls.Add(this.OpenProducts);
             this.Controls.Add(this.OpenTables);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "HomeForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Anasayfa";
@@ -165,5 +204,6 @@ namespace FormTasarım
         private Bunifu.Framework.UI.BunifuFlatButton OpenTables;
         private Bunifu.Framework.UI.BunifuFlatButton OpenProducts;
         private Bunifu.Framework.UI.BunifuFlatButton OpenPayments;
+        private Bunifu.Framework.UI.BunifuFlatButton btnRegister;
     }
 }

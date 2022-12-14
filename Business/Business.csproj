@@ -57,11 +57,13 @@
     <Compile Include="Abstract\IPaymentService.cs" />
     <Compile Include="Abstract\IProductService.cs" />
     <Compile Include="Abstract\ITableService.cs" />
+    <Compile Include="Abstract\IUserService.cs" />
     <Compile Include="Concrete\CategoryManager.cs" />
     <Compile Include="Concrete\OrderManager.cs" />
     <Compile Include="Concrete\PaymentManager.cs" />
     <Compile Include="Concrete\ProductManager.cs" />
     <Compile Include="Concrete\TableManager.cs" />
+    <Compile Include="Concrete\UserManager.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

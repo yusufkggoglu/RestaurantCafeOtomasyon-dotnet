@@ -27,14 +27,6 @@ namespace FormTasarım
         }
         private ITableService _tableService;
         private IOrderService _orderService;
-
-        //private void FormTable_Load(object sender, EventArgs e)
-        //{
-        //    dqwTable.DataSource = _orderService.GetAll();
-        //}
-
-       
-
         private void OpenFormTableScreen(int tbl)
         {
             FormTableScreen frm = new FormTableScreen()
@@ -44,86 +36,6 @@ namespace FormTasarım
             frm.Show();
             this.Hide();
         }
-
-        ////private int TableClick(int tabl)
-        //{
-        //    Table table = new Table
-        //    {
-        //        TableID = tabl,
-        //    };
-        //    int tbl = table.TableID;
-        //    if (table.Status == 0)
-        //    {
-        //        _tableService.Update(new Table()
-        //        {
-        //            TableID = tbl,
-        //            Status = 1,
-        //        });
-        //        btnTable1.BackColor = Color.Red;
-        //    }
-
-        //    return tbl;
-        //}
-        //private void btnTable1_Click(object sender, EventArgs e)
-        //{
-        //    var tbl = TableClick(1);
-        //    OpenFormTableScreen(tbl);
-        //}
-
-        //private void btnTable2_Click(object sender, EventArgs e)
-        //{
-        //    var tbl = TableClick(2);
-        //    OpenFormTableScreen(tbl);
-        //}
-
-        //private void btnTable3_Click(object sender, EventArgs e)
-        //{
-        //    var tbl = TableClick(3);
-        //    OpenFormTableScreen(tbl);
-        //}
-
-        //private void btnTable4_Click(object sender, EventArgs e)
-        //{
-        //    var tbl = TableClick(4);
-        //    OpenFormTableScreen(tbl);
-        //}
-
-        //private void btnTable5_Click(object sender, EventArgs e)
-        //{
-        //    var tbl = TableClick(5);
-        //    OpenFormTableScreen(tbl);
-        //}
-
-        //private void btnTable6_Click(object sender, EventArgs e)
-        //{
-        //    var tbl = TableClick(6);
-        //    OpenFormTableScreen(tbl);
-        //}
-
-        //private void btnTable7_Click(object sender, EventArgs e)
-        //{
-        //    var tbl = TableClick(7);
-        //    OpenFormTableScreen(tbl);
-        //}
-
-        //private void btnTable8_Click(object sender, EventArgs e)
-        //{
-        //    var tbl = TableClick(8);
-        //    OpenFormTableScreen(tbl);
-        //}
-
-        //private void btnTable9_Click(object sender, EventArgs e)
-        //{
-        //    var tbl = TableClick(9);
-        //    OpenFormTableScreen(tbl);
-        //}
-
-        //private void btnTable10_Click(object sender, EventArgs e)
-        //{
-        //    var tbl = TableClick(10);
-        //    OpenFormTableScreen(tbl);
-        //}
-
         private void GetTables()
         {
             var model = _tableService.GetAll();
