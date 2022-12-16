@@ -31,11 +31,15 @@ namespace FormTasarım
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormPayment));
             this.bunifuCards1 = new Bunifu.Framework.UI.BunifuCards();
+            this.tbxCash = new System.Windows.Forms.TextBox();
+            this.lblCash = new System.Windows.Forms.Label();
+            this.tbxCard = new System.Windows.Forms.TextBox();
+            this.lblcard = new System.Windows.Forms.Label();
+            this.btnDelete = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.tbxSumPrice = new System.Windows.Forms.TextBox();
+            this.lblSum = new System.Windows.Forms.Label();
             this.OpenHomeForm = new Bunifu.Framework.UI.BunifuFlatButton();
             this.dqwPayment = new System.Windows.Forms.DataGridView();
-            this.lblSum = new System.Windows.Forms.Label();
-            this.tbxSumPrice = new System.Windows.Forms.TextBox();
-            this.btnDelete = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuCards1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dqwPayment)).BeginInit();
             this.SuspendLayout();
@@ -46,6 +50,10 @@ namespace FormTasarım
             this.bunifuCards1.BorderRadius = 5;
             this.bunifuCards1.BottomSahddow = true;
             this.bunifuCards1.color = System.Drawing.Color.DarkRed;
+            this.bunifuCards1.Controls.Add(this.tbxCash);
+            this.bunifuCards1.Controls.Add(this.lblCash);
+            this.bunifuCards1.Controls.Add(this.tbxCard);
+            this.bunifuCards1.Controls.Add(this.lblcard);
             this.bunifuCards1.Controls.Add(this.btnDelete);
             this.bunifuCards1.Controls.Add(this.tbxSumPrice);
             this.bunifuCards1.Controls.Add(this.lblSum);
@@ -59,6 +67,101 @@ namespace FormTasarım
             this.bunifuCards1.ShadowDepth = 20;
             this.bunifuCards1.Size = new System.Drawing.Size(1304, 712);
             this.bunifuCards1.TabIndex = 0;
+            // 
+            // tbxCash
+            // 
+            this.tbxCash.Enabled = false;
+            this.tbxCash.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tbxCash.Location = new System.Drawing.Point(216, 618);
+            this.tbxCash.Name = "tbxCash";
+            this.tbxCash.Size = new System.Drawing.Size(173, 45);
+            this.tbxCash.TabIndex = 22;
+            // 
+            // lblCash
+            // 
+            this.lblCash.AutoSize = true;
+            this.lblCash.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblCash.Location = new System.Drawing.Point(79, 624);
+            this.lblCash.Name = "lblCash";
+            this.lblCash.Size = new System.Drawing.Size(92, 38);
+            this.lblCash.TabIndex = 21;
+            this.lblCash.Text = "Nakit";
+            // 
+            // tbxCard
+            // 
+            this.tbxCard.Enabled = false;
+            this.tbxCard.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tbxCard.Location = new System.Drawing.Point(660, 618);
+            this.tbxCard.Name = "tbxCard";
+            this.tbxCard.Size = new System.Drawing.Size(173, 45);
+            this.tbxCard.TabIndex = 20;
+            // 
+            // lblcard
+            // 
+            this.lblcard.AutoSize = true;
+            this.lblcard.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblcard.Location = new System.Drawing.Point(471, 624);
+            this.lblcard.Name = "lblcard";
+            this.lblcard.Size = new System.Drawing.Size(169, 38);
+            this.lblcard.TabIndex = 19;
+            this.lblcard.Text = "Kredi Kartı";
+            // 
+            // btnDelete
+            // 
+            this.btnDelete.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
+            this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnDelete.BackColor = System.Drawing.Color.Red;
+            this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnDelete.BorderRadius = 0;
+            this.btnDelete.ButtonText = "Temizle";
+            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDelete.DisabledColor = System.Drawing.Color.Gray;
+            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnDelete.Iconcolor = System.Drawing.Color.Transparent;
+            this.btnDelete.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnDelete.Iconimage")));
+            this.btnDelete.Iconimage_right = null;
+            this.btnDelete.Iconimage_right_Selected = null;
+            this.btnDelete.Iconimage_Selected = null;
+            this.btnDelete.IconMarginLeft = 0;
+            this.btnDelete.IconMarginRight = 0;
+            this.btnDelete.IconRightVisible = true;
+            this.btnDelete.IconRightZoom = 0D;
+            this.btnDelete.IconVisible = true;
+            this.btnDelete.IconZoom = 90D;
+            this.btnDelete.IsTab = false;
+            this.btnDelete.Location = new System.Drawing.Point(1039, 14);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(8);
+            this.btnDelete.Name = "btnDelete";
+            this.btnDelete.Normalcolor = System.Drawing.Color.Red;
+            this.btnDelete.OnHovercolor = System.Drawing.Color.Red;
+            this.btnDelete.OnHoverTextColor = System.Drawing.Color.White;
+            this.btnDelete.selected = false;
+            this.btnDelete.Size = new System.Drawing.Size(226, 66);
+            this.btnDelete.TabIndex = 18;
+            this.btnDelete.Text = "Temizle";
+            this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.btnDelete.Textcolor = System.Drawing.Color.White;
+            this.btnDelete.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
+            // 
+            // tbxSumPrice
+            // 
+            this.tbxSumPrice.Enabled = false;
+            this.tbxSumPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.tbxSumPrice.Location = new System.Drawing.Point(1073, 615);
+            this.tbxSumPrice.Name = "tbxSumPrice";
+            this.tbxSumPrice.Size = new System.Drawing.Size(173, 45);
+            this.tbxSumPrice.TabIndex = 16;
+            // 
+            // lblSum
+            // 
+            this.lblSum.AutoSize = true;
+            this.lblSum.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.lblSum.Location = new System.Drawing.Point(936, 621);
+            this.lblSum.Name = "lblSum";
+            this.lblSum.Size = new System.Drawing.Size(125, 38);
+            this.lblSum.TabIndex = 15;
+            this.lblSum.Text = "Toplam";
             // 
             // OpenHomeForm
             // 
@@ -112,63 +215,6 @@ namespace FormTasarım
             this.dqwPayment.Size = new System.Drawing.Size(1230, 497);
             this.dqwPayment.TabIndex = 1;
             // 
-            // lblSum
-            // 
-            this.lblSum.AutoSize = true;
-            this.lblSum.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.lblSum.Location = new System.Drawing.Point(936, 621);
-            this.lblSum.Name = "lblSum";
-            this.lblSum.Size = new System.Drawing.Size(131, 39);
-            this.lblSum.TabIndex = 15;
-            this.lblSum.Text = "Toplam";
-            // 
-            // tbxSumPrice
-            // 
-            this.tbxSumPrice.Enabled = false;
-            this.tbxSumPrice.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.tbxSumPrice.Location = new System.Drawing.Point(1073, 615);
-            this.tbxSumPrice.Name = "tbxSumPrice";
-            this.tbxSumPrice.Size = new System.Drawing.Size(173, 45);
-            this.tbxSumPrice.TabIndex = 16;
-            // 
-            // btnDelete
-            // 
-            this.btnDelete.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(139)))), ((int)(((byte)(87)))));
-            this.btnDelete.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnDelete.BackColor = System.Drawing.Color.Red;
-            this.btnDelete.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnDelete.BorderRadius = 0;
-            this.btnDelete.ButtonText = "Temizle";
-            this.btnDelete.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnDelete.DisabledColor = System.Drawing.Color.Gray;
-            this.btnDelete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnDelete.Iconcolor = System.Drawing.Color.Transparent;
-            this.btnDelete.Iconimage = ((System.Drawing.Image)(resources.GetObject("btnDelete.Iconimage")));
-            this.btnDelete.Iconimage_right = null;
-            this.btnDelete.Iconimage_right_Selected = null;
-            this.btnDelete.Iconimage_Selected = null;
-            this.btnDelete.IconMarginLeft = 0;
-            this.btnDelete.IconMarginRight = 0;
-            this.btnDelete.IconRightVisible = true;
-            this.btnDelete.IconRightZoom = 0D;
-            this.btnDelete.IconVisible = true;
-            this.btnDelete.IconZoom = 90D;
-            this.btnDelete.IsTab = false;
-            this.btnDelete.Location = new System.Drawing.Point(1039, 14);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(8);
-            this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Normalcolor = System.Drawing.Color.Red;
-            this.btnDelete.OnHovercolor = System.Drawing.Color.Red;
-            this.btnDelete.OnHoverTextColor = System.Drawing.Color.White;
-            this.btnDelete.selected = false;
-            this.btnDelete.Size = new System.Drawing.Size(226, 66);
-            this.btnDelete.TabIndex = 18;
-            this.btnDelete.Text = "Temizle";
-            this.btnDelete.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.btnDelete.Textcolor = System.Drawing.Color.White;
-            this.btnDelete.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
-            // 
             // FormPayment
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -197,5 +243,9 @@ namespace FormTasarım
         private System.Windows.Forms.TextBox tbxSumPrice;
         private System.Windows.Forms.Label lblSum;
         private Bunifu.Framework.UI.BunifuFlatButton btnDelete;
+        private System.Windows.Forms.TextBox tbxCash;
+        private System.Windows.Forms.Label lblCash;
+        private System.Windows.Forms.TextBox tbxCard;
+        private System.Windows.Forms.Label lblcard;
     }
 }

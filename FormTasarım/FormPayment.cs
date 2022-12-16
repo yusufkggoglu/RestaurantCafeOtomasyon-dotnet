@@ -27,11 +27,24 @@ namespace FormTasarım
         {
             LoadPayments();
             tbxSumPrice.Text = GetSumPrice();
+            tbxCard.Text = GetByPaymentMethod("Kredi Kartı");
+            tbxCash.Text = GetByPaymentMethod("Nakit");
         }
 
         private string GetSumPrice()
         {
             var list = _paymentService.GetAll();
+            decimal price = 0;
+            foreach (var temp in list)
+            {
+                price += Convert.ToDecimal(temp.Price);
+            }
+
+            return price.ToString();
+        }
+        private string GetByPaymentMethod(string method)
+        {
+            var list = _paymentService.GetByPaymentMethod(method);
             decimal price = 0;
             foreach (var temp in list)
             {

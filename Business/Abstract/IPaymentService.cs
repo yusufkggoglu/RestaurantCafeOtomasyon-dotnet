@@ -15,5 +15,6 @@ namespace Business.Abstract
         void Update(Payment payment);
         void Delete(Payment payment);
         Payment Get(int id);
+        List<Payment> GetByPaymentMethod(string method);
     }
 }

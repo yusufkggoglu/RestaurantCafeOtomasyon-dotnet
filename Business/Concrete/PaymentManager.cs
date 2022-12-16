@@ -42,5 +42,10 @@ namespace Business.Concrete
         {
             return _paymentDal.Get(p => p.PaymentID.Equals(id));
         }
+
+        public List<Payment> GetByPaymentMethod(string method)
+        {
+            return _paymentDal.GetAll(p => p.PaymentMethod.Equals(method));
+        }
     }
 }

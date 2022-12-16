@@ -250,6 +250,7 @@ namespace FormDesign
             // 
             // flpProducts
             // 
+            this.flpProducts.AutoScroll = true;
             this.flpProducts.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.flpProducts.Location = new System.Drawing.Point(34, 117);
             this.flpProducts.Name = "flpProducts";
